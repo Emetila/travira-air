@@ -1,0 +1,565 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1600px;
+}
+
+#logo, .logo-footer {
+    max-width: 122px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    min-height: 8vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    width: 1600px;
+}
+
+@media (max-width: 720px) {
+    nav {
+        height: auto;
+        width: 50%;
+        flex-direction: row;
+    }
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    color: var(--Gray-1, #333);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 29.441px */
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list li :hover {
+    color: #0E1035;
+    border: 1px solid #0E1035;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--Gray-1, #333);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    padding: 14px 16px;
+}
+
+.nav-list li a.active {
+    color: var(--Blue-1, #2F80ED);
+}
+
+#primary {
+    background-color: white;
+    color: #0E1035;
+    display: flex;
+    padding: 12px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    border: 1px solid #0E1035;
+    box-shadow: #9C9C9C;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#primary:hover {
+  background-color: #0E1035;
+  transition: background-color 2s ease-in-out;
+}
+
+#primary a {
+    text-decoration: none;
+    color: #0E1035;
+    position: relative;
+    transition: transform 0.8s;
+  }
+#primary a:hover {
+    color: white;
+}
+
+span {
+    color: var(--Blue-1, #2F80ED);
+    font-family: 'Inter', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h1 {
+    color: #0E1035;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    width: 550px;
+}
+
+.hero-image {
+    flex-shrink: 0;
+    max-width: 800px; 
+    height: 800px;
+    position: relative; 
+    z-index: -2;
+    margin-top: 0;
+}
+
+#hero-section {
+    width: 1440px;
+    display: flex;    
+}
+
+#hero-section, #companies, #testimonial {
+    margin-left: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+    width: 1600px;
+}
+
+.hero-content {
+    clear: right;
+}
+
+.hero, .safety-text, .fleet-text {
+    color: var(--color-secondary, #676767);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    width: 450px;
+    padding-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#secondary, #tertiary {
+    background: #0E1035;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    display: inline-flex;
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8.412px;
+    border-radius: 20px;
+    margin-top: 50px;
+    cursor: pointer; 
+}
+
+#secondary:hover {
+    background-color: white;
+    transition: background-color 2s ease-in-out;
+    color: #0E1035;
+}
+   
+#companies {
+    background-color: #0E1035;
+    margin-left: 0;
+    display: flex;
+    max-width: 1800px;
+    padding: 40px 0px 30px 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+
+.text {
+    color: var(--Blue-1, #2F80ED);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 140%; /* 35.329px */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 140%; /* 35.329px */
+}
+
+.companies-content, .fleet-content {
+    color: white;
+    margin-left: 8rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+.companies-logo {
+    display: flex;
+    margin-left: 4rem;
+    max-width: 1400px;
+    justify-items:center;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.exxon-logo, .pertamina-logo, .petronas-logo {
+    width: 200px;
+    height: 50px;
+}
+
+.chevron-logo {
+    width: 200px;
+    height: 90px;
+}
+
+#service {
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 8rem;
+    border: 50px;
+    flex-direction: row;
+    gap: 80px;
+    max-width: 1000px;
+    flex-shrink: 0;
+    box-sizing: content-box;
+    margin-bottom: 4rem;
+}
+
+.service-image, .safety-image {
+    width: 600px;
+    height: 500px;
+    border-radius: 30px;
+    flex-shrink: 0;
+}
+
+.service-content {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.service-heading {
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.service-text, .service-list {
+    color: #BDBBBB;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    width: 420px;
+}
+
+.service-list, .list-item2, .list-item3 {
+    color: white;
+    padding-top: 30px;
+    list-style: none;
+    text-decoration: underline;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    font-style: bold;
+}
+
+.list-items, .safety-list {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.safety-list {
+    margin-left: -40px;
+}
+
+#safety {
+    display: flex;
+    margin-top: 8rem;
+    margin-left: 8rem;
+    gap: 80px;
+    max-width: 100px;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: center;
+    margin-bottom: 8rem;
+}
+
+.safety-text {
+    padding-bottom: 20px;
+}
+
+.list-item2, .list-item3 {
+    color: #0E1035;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 36px */
+}
+
+.list-item3 {
+    padding-left: 40px;
+}
+
+.fleet-title, .fleet-text {
+    width: 1440px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+}
+
+.fleet-image {
+    width: 500px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 4rem 0.5rem 8rem 8rem;
+    border-radius: 50px 50px 0px 0px;   
+}
+
+.container {
+    text-align: center;
+  padding: 10px 20px;
+}
+
+h2 {
+    color: #0E1035;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 54px */
+}
+
+.image1, .image2 {
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    background: url(image/cloud1.png), lightgray 50% / cover no-repeat;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.image2, .image3 {
+    height: 300px;
+}
+
+.image3 {
+    background: url(image/cloud1.png);
+    width: 200px;
+}
+
+.review-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+}
+
+.testimonial-1, .testimonial-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 25px;
+    flex-direction: column;
+    align-items: start;
+    margin-right: 24px;
+    gap: 32px;
+    float: inline-start;
+    border-radius: 30px;
+    background: #FFF;
+    width: fit-content;
+    /* shadow 2 */
+    box-shadow: 30px 10px 50px 0px rgba(152, 149, 149, 0.30);
+}
+
+.testimonial-2 {
+    align-items: start;
+    border-radius: 30px;
+    margin-right: 40px;
+}
+
+.review1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #232323;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 42px */
+    letter-spacing: 0.28px;
+}
+
+.location {
+    font-size: 12px;
+    color: var(--Mobile-Neutral-Light-Text, #9C9C9C);
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 175% */
+}
+
+h4 {
+    color: var(--Mobile-Neutral-Light-Text, #9C9C9C);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    width: 350px;
+    line-height: 28px; /* 116.667% */
+}
+
+.testimonial-content {
+    display: flex;
+    width: 1800px;
+    height: 800px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+#contact-us {
+    display: flex;
+    width: 1300px;
+    height: 300px;
+    border-radius: 60px;
+    flex-shrink: 0;
+    background-color: #0E1035;
+    margin-left: 0;
+    z-index: 1; /* set higher z-index value */
+    position: relative; /* position must be set for z-index to work */
+}
+
+.contact-image {
+    height: 300px;
+    width: 800px;
+}
+
+.contact-text {
+    color: white;
+    padding-top: 4rem;
+    margin-left: 4rem;
+    width: 400px;
+}
+
+#tertiary {
+    color: #0E1035;
+    background-color: white;
+    position: absolute;
+    z-index: -1;
+    margin-left: 400px;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-footer {
+    width: 500px;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    
+}
+
+.col-title {
+    color: #0E1035;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+}
+
+.company {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.column-1 {
+   margin-left: 150px;
+}
+
+.column-2, .column-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 25%;
+}
+
+.column-1 a, .column-2 a, .column-3 a {
+    list-style: none;
+    color: #0E1035;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.column-1, .column-2, .column-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.column-3 p {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 5px;
+}
+
+.column-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 25%;
+}
+
+.footer-content {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    padding-top:  30px;
+}
+
+footer {
+    margin-bottom: 8rem;
+    width: 1600px;
+}
